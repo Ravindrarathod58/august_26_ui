@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script> -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="min-vh-100">
+    <!-- 
+        Bootstrap
+            CSS library to design the webpages
+            bootstrap provides the utility classes to build the webpages faster
+
+        .d-flex{
+            display:flex;
+        }
+
+        1. using CDN (content delivery network) (Not recommended)
+            1. visit getbootstrap.com
+            2. select docs
+
+
+        2. using NPM (Node package manager) 
+                it is a package manager for node js 
+            1. install node js
+                    nodejs.org
+                it is environment to run the javascript outside the browsers
+            2. verify the installation
+                node -v -> displays the nodejs version
+
+            3. install bootstrap
+                npm install bootstrap@5.3.8
+
+                install bootstrap icons
+                npm install bootstrap-icons
+
+                it will add the node_modules 
+                    it contains the offline dependencies / packages
+
+    colors & backgrounds
+        color : value , background : values
+        classes 
+            text color
+                    text-primary -> blue
+                    text-primary-subtle -> less opacity
+                    text-secondary -> gray
+                    text-warning -> yellow
+                    text-info -> sky blue (aqua)
+                    text-danger -> red
+                    text-dark -> black
+                    text-light -> white
+                    text-success -> green
+
+                    bg-primary
+                    bg-secondary
+                    bg-info
+                    bg-warning
+                    bg-danger
+                    bg-info
+                    bg-dark
+                    bg-light
+                    bg-success
+
+            typography
+                font-size, font-style, font-weight, text-decoration
+                font size
+                    h1 -> h6 -> default font size of heading tags and bold
+                    display-1 -> display-6 -> 
+                fst-italic
+                font weight 
+                    fw-bold
+                    fw-bolder
+                    fw-light
+                    fw-lighter
+                text-decoration-none
+                text-decoration-underline
+
+            box-modal
+                height
+                    h-25 = height : 25%;
+                    h-50
+                    h-75
+                    h-100
+                    min-vh-100 = min-height:100vh;
+                weidth
+                    w-25 = width : 25%
+                    w-50
+                    w-75
+                    w-100
+                    min-vw-100 = min-width:100vw;
+                margin
+                    compound margin
+                    m-0 - m-5 -> applies the margin to all sides
+                    mx-0 - mx-5 -> left - right
+                    my-0 - my-5 -> top - bottom
+                    ms-0 - ms-5 -> left 
+                    me-0 - me-5 -> right
+                    mt-0 - mt-5 -> top
+                    mb-0 - mb-5 -> bottom
+                padding
+                    p-0 - p-5 -> all sides
+                    px-0 - px-5 -> left-right
+                    py-0 - py-5 -> top - bottom
+                    ps-0 - ps-5 -> left
+                    pe-0 - pe-5 -> right
+                    pt-0 - pt-5 -> top
+                    pb-0 - pb-5 -> bottom
+                box-sizing
+
+                box-shadow
+                    shadow -> adds the normal shadow
+                    shadow-sm -> small
+                    shadow-lg -> large
+                border
+                    border -> compulsory (required)
+                    border-width
+                        border-0 - border-5
+                    border-color
+                        border-primary
+                        border-secondary
+                        border-danger
+                        border-success
+                        border-warning
+                        border-info
+                        border-dark
+                        border-light
+                border-radius
+                        border-radius : value;
+                        rounded-0 - rounded-5
+                        rounded-bottom-0 - rounded-bottom-5 -> bottom left , bottom right
+                        rounded-top-0 - rounded-top-5 -> top left, top right
+                        rounded-circle -> to create the circle
+                        rounded-pill -> creates oval shape
+                        rounded-top-circle
+                        rounded-bottom-circle
+                        rounded-top-pill
+                        rounded-bottom-pill
+
+                flexbox
+                    display : flex;
+                        d-flex
+                    justify-content : value;
+                        justify-content-center = center
+                        justify-content-around = space-around
+                        justify-content-between = space-between
+
+                    align-items : value;
+                        align-items-center = center
+                        align-items-start = flex-start
+                        align-items-end = flex-end
+
+                    flex-direction : value
+                        flex-row = row
+                        flex-column = column
+                        flex-row-reverse = row-reverse
+                        flex-column-reverse = column-reverse
+
+                    flex-wrap
+                        flex-wrap
+
+                positions
+                    position-relative
+                    position-absolute
+                    position-sticky
+                    position-fixed
+                
+                grid
+                    row
+                    col
+    -->
+
+    <h1 class="text-danger bg-primary">Hello Bootstrap</h1>
+    <button onclick="setTheme()">Chnage theme</button>
+    <p class="display-6 m-5 shadow-lg rounded-pill border border-primary">
+      this is paragraph
+    </p>
+    <a href="" class="text-decoration-none">click me </a>
+
+    <div
+      class="border border-2 border-primary p-2 justify-content-around"
+      style="min-height: 500px"
+    >
+      <div
+        class="row border border-2 border-danger p-1 gap-1 justify-content-around"
+      >
+        <div
+          class="col-sm-12 col-xl-2 border border-2 rounded-5 d-flex flex-column justify-content-around align-items-center"
+          style="height: 250px; width: 22%"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+            class="w-50"
+          />
+
+          <span class="h5">HTML</span>
+          <span>The building blocks of every webpage</span>
+        </div>
+        <div
+          class="col-sm-12 col-xl-2 border border-2 rounded-5 d-flex flex-column justify-content-around align-items-center"
+          style="height: 250px; width: 22%"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+            class="w-50"
+          />
+
+          <span class="h5">CSS</span>
+          <span>Style and layout of the webpages</span>
+        </div>
+        <div
+          class="col-sm-12 col-xl-2 border border-2 rounded-5 d-flex flex-column justify-content-around align-items-center"
+          style="height: 250px; width: 22%"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+            class="w-50"
+          />
+
+          <span class="h5">JavaScript</span>
+          <span>Interactive and dynamic webpages</span>
+        </div>
+        <div
+          class="col-sm-12 col-xl-2 border border-2 rounded-5 d-flex flex-column justify-content-around align-items-center"
+          style="height: 250px; width: 22%"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+            class="w-50"
+          />
+
+          <span class="h5">SQL</span>
+          <span>Query and manage database</span>
+        </div>
+      </div>
+      <div class="border border-2 border-danger">
+        <div class="border border-2 border-dark" style="height: 300px">
+          items
+        </div>
+        <div class="border border-2 border-dark" style="height: 300px">
+          items
+        </div>
+        <div class="border border-2 border-dark" style="height: 300px">
+          items
+        </div>
+        <div class="border border-2 border-dark" style="height: 300px">
+          items
+        </div>
+        <div class="border border-2 border-dark" style="height: 300px">
+          items
+        </div>
+      </div>
+      <div class="border border-2 border-danger">
+        <div>items</div>
+        <div>items</div>
+        <div>items</div>
+        <div>items</div>
+        <div>items</div>
+      </div>
+      <div class="border border-2 border-danger">
+        <div>items</div>
+        <div class="spinner-border text-primary"></div>
+        <div>items</div>
+        <div>items</div>
+        <div>items</div>
+      </div>
+    </div>
+
+    <script>
+      function setTheme() {
+        if (document.documentElement.getAttribute("data-bs-theme") === "dark") {
+          document.documentElement.setAttribute("data-bs-theme", "light");
+        } else {
+          document.documentElement.setAttribute("data-bs-theme", "dark");
+        }
+      }
+    </script>
+  </body>
+</html>
