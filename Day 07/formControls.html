@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    
+        input
+            color
+                - to pick a color
+            date
+                - calendor to select the date
+            time
+
+            datetime
+
+            file
+                - to choose the files to share
+                    multiple - attribute 
+                            allows to choose more than one file
+    
+            checkbox
+                to select more than one option
+
+
+            dropdown
+                - allows to choose a single option from the list
+                select
+                    option
+
+            datalist
+                input text, search
+                        list attribute
+                datalist
+                        id attribute
+                    option
+                        value attribute
+
+            
+    attributes
+        action
+            we can add the URL of the backend where we want to share the form data
+
+        Method
+            we can add the HTTP get or Post method to the form
+        
+        type
+            defines the type of input field
+        value
+            adds the value for the input fields
+        for
+            we can add id of the input field to identif its label
+        required
+            adds the basic browser validation
+        multiple
+            to choose the more than one files
+        min, max
+            used with number fields to defined the range
+        placeholder
+            to display the dummy text in the input fields 
+
+        name
+            to give the unique identifier for the input fields to identify in the backend
+        
+        list
+            adds the datalist to the input fields
+
+        rows, col
+            to add the number of rows and columns in textarea
+
+    textfield
+        for single line inputs
+    textarea
+        for multi line or paragraph inputs
+
+
+    iframe
+        inline frames to add the external websites, or pages, or videos, maps
+
+    
+
+        audio
+        video
+    -->
+    <input type="text" />
+    <form action=""></form>
+
+    <input type="color" />
+    <input type="date" />
+    <input type="time" />
+    <input type="datetime-local" />
+    <input type="file" multiple />
+
+    <!-- radio button and checkbox -->
+
+    <!-- 
+    gender = Male
+
+    -->
+    <label for="">Gender</label>
+    <label for="Male">
+      <input type="radio" name="gender" id="Male" value="Male" />
+      Male
+    </label>
+    <label for="Female">
+      <input type="radio" name="gender" id="Female" value="Female" />
+      Female
+    </label>
+    <label for="other">
+      <input type="radio" name="gender" id="other" value="other" />
+      Other
+    </label>
+    <br />
+
+    <!-- 
+        hobbies = [Reading,Riding ]
+    
+    -->
+    <label for="">Hobbies</label>
+    <label for="Gym">
+      <input type="checkbox" name="hobbies" id="Gym" value="Gym" />
+      Gym
+    </label>
+    <label for="reading">
+      <input type="checkbox" name="hobbies" id="reading" value="reading" />
+      Reading
+    </label>
+    <label for="Dancing">
+      <input type="checkbox" name="hobbies" id="Dancing" value="Dancing" />
+      Dancing
+    </label>
+    <label for="Riding">
+      <input type="checkbox" name="hobbies" id="Riding" value="Riding" />
+      Riding
+    </label>
+
+    <!-- 
+        Dropdown
+    -->
+    <br />
+    <label for="favourites">Bikes</label>
+    <select name="favourites" id="favourites">
+      <option value="R15">R15</option>
+      <option value="Spendor">Spendor</option>
+      <option value="GT 650">GT 650</option>
+      <option value="KTM">KTM</option>
+      <option value="Activa">Activa</option>
+      <option value="Hunter 350">Hunter 350</option>
+      <option value="Bullet classic standard">Bullet classic standard</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <br />
+    <!-- 
+    
+    search bar products  
+    
+    
+
+    TVS
+
+
+    -->
+    <br />
+    <input type="search" id="search" name="search" list="tvsbikes" />
+    <datalist id="tvsbikes">
+      <option value="Raider"></option>
+      <option value="Apache"></option>
+      <option value="Start city"></option>
+      <option value="Jupiter"></option>
+      <option value="sport"></option>
+      <option value="icube"></option>
+    </datalist>
+
+    <input type="number" min="100" max="200" />
+
+    <textarea name="" id="" rows="" cols=""></textarea>
+
+    <!-- adding the iframes -->
+    <br />
+    <iframe
+      src="index.html"
+      frameborder="0"
+      height="500px"
+      width="100%"
+    ></iframe>
+
+    <!-- adding youtube videos to webpage -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/63DsPw34u-Y?si=1SzZ4nm978HS21ju"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <!-- adding maps using iframe -->
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.054341194339!2d73.80041667474873!3d18.48119758260474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfeb853d4691%3A0x56f1a2e46627167!2sGiri's%20TECH%20HUB%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1789365462755!5m2!1sen!2sin"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+
+    <!-- adding google search page -->
+    <iframe src="https://www.google.com" frameborder="0"></iframe>
+
+    <!-- 
+        Audio & video
+    -->
+    <br />
+    <audio
+      src="sigmamusicart-football-football-music-551346.mp3"
+      controls
+      muted
+    ></audio>
+    <br />
+
+    <video
+      src="327388_medium.mp4"
+      controls
+      autoplay
+      muted
+      height="200px"
+      width="200px"
+      poster=""
+    ></video>
+
+    <!-- 
+
+        Tags
+            presentational & formatting
+                semantic non - semantic block inline
+            links & images
+            list & container
+            Tables
+            forms
+                -
+            multimedia
+                iframe, audio, video
+
+
+
+
+    
+        introduction
+        color
+        border
+
+
+    Task
+        create a webpage for youtube videos gallary
+        create a webpage for music gallary
+        create a webpage for video gallry
+    
+    -->
+  </body>
+</html>

@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  height: 80%;
+  width: 30%;
+  /* border: 2px solid; */
+  box-shadow: 0 0 3px gray;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.close {
+  /* border: 1px solid; */
+  text-align: end;
+}
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sign {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.register {
+  color: gray;
+}
+.register a {
+  text-decoration: none;
+  color: rgb(24, 170, 24);
+  font-weight: 500;
+}
+
+.login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid; */
+  height: 15%;
+}
+.cards {
+  /* border: 1px solid; */
+  height: 80%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 3px gray;
+}
+
+.devider {
+  border: 1px solid gray;
+  width: 80%;
+  /* addition prop */
+  position: relative;
+  align-self: center;
+}
+.devider span {
+  display: inline-block;
+  left: 47%;
+  top: -15px;
+  background-color: white;
+  padding: 5px;
+  /* additional prop */
+  position: absolute;
+}

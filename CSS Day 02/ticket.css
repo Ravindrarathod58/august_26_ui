@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Sans+Khudawadi&family=Sekuya&family=Space+Grotesk:wght@300..700&display=swap");
+
+.container {
+  padding: 20px;
+  outline: 20px dotted white;
+  /* offset: 50px; */
+  outline-offset: -10px;
+  /* outline: 20px dotted black; */
+  height: 150px;
+  background-color: rgba(225, 204, 8, 0.404);
+}
+
+.content {
+  border: 4px double brown;
+  height: 140px;
+
+  /* Additional prop */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content img {
+  height: 50%;
+  width: 10%;
+}
+.inner-content {
+  font-family: "Black Ops One", system-ui;
+  text-align: center;
+  color: brown;
+  border-right: 10px dotted white;
+  width: 60%;
+  text-transform: uppercase;
+}
+
+.side-content p {
+  font-family: "Black Ops One", system-ui;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  text-align: center;
+  color: brown;
+}
+
+.img {
+  width: 40%;
+  height: 100%;
+  /* border: 1px solid; */
+  background-image: url(image-removebg-preview.png);
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: brown;
+
+  /* additional prop */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img span {
+  font-size: 16px;
+}

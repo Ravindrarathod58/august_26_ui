@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      p,
+      span {
+        color: red;
+      }
+
+      div p {
+      }
+
+      .p::first-letter {
+        text-transform: uppercase;
+        color: blue;
+        font-size: 2rem;
+      }
+      .p:hover {
+        color: green;
+        text-shadow:
+          0px 0px 4px green,
+          0px 0px 4px red;
+      }
+
+      .p::before {
+        content: "hello";
+      }
+      .p::after {
+        content: "CSS";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        Box modal properties
+
+            1. height
+            2. width
+            3. margin
+            4. padding
+            5. border
+            6. box-sizing
+            7. box-shadow
+
+
+        units to control the height and width
+            1. px
+                fiexed unit
+            2. %    
+                always depends on parents height or width
+                500px -> 100%
+                1080 -> 100%
+            3. vh vw
+                viewport height, viewport width
+                1080px 920px
+        
+        margin
+            to add the space between to adjacent element
+            shorthand 
+                margin : 30px -> applies to all sides
+                margin : 10px 20px  / top / bottom   left / right
+                margin : 10px 2px 30px 10px / top left bottom right
+
+
+            margin-top
+            margint-bottom
+            margin-left
+            margin-right
+
+        padding
+            to add the space between element border and the content
+             shorthand 
+                padding : 30px -> applies to all sides
+                padding : 10px 20px  / top / bottom   left / right
+                padding : 10px 2px 30px 10px / top left bottom right
+        padding-top
+        padding-bottom
+        padding-left
+        padding-right
+
+    box-sizing
+        border-box
+        content-box
+
+    box-shadow
+        to add the shadow to elements
+
+
+
+    to design the cards
+
+
+    we cannot apply the box modal properties on the inline elements
+
+
+    selectors in CSS
+        1. TagName
+        2. class
+            the group of elements with same style
+        3. id
+            unique identifier
+        4. child selector
+            parent > child
+        5. universal selector
+            *
+        6. group selector
+            .class , tagName, # , p > c
+
+        7. decendant selector
+            parent child
+
+        8. pseudo class
+
+        9. pseudo element
+
+
+    -->
+
+    <!-- <div class="outer">
+      <div class="inner"></div>
+    </div>
+    <div class="second">
+      <h1>Javascript</h1>
+    </div> -->
+
+    <!-- <div class="outer">
+      <div class="inner">
+        <img src="image.png" alt="" />
+        <span class="price">From 79999*</span>
+      </div>
+      <span>Iphone 17</span>
+    </div>
+    <div class="outer">
+      <div class="inner">
+        <img src="image.png" alt="" />
+        <span class="price">From 79999*</span>
+      </div>
+      <span>Iphone 17</span>
+    </div> -->
+
+    <p>This is paragraph</p>
+    <span>This is span</span>
+
+    <div>
+      <p class="p">this is paragraph</p>
+    </div>
+  </body>
+</html>

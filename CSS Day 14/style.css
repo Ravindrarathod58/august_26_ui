@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  height: 200px;
+  width: 200px;
+  border: 10px solid;
+  border-top: 15px solid red;
+  /* 0 - 360  */
+  /* transform: rotate(180deg); */
+  border-radius: 50%;
+  animation: spinner 1s ease-in-out infinite;
+  /* transform: skew(10deg); */
+  /* -webkit-text-fill-color: ; */
+}
+.card:hover {
+  /* transform: translateY(-30px); */
+  /* transform: translateX(-20px); */
+}
+
+@keyframes spinner {
+  to {
+    transform: rotateY(180deg) rotateX(180deg);
+  }
+}

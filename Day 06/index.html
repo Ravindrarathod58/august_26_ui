@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    
+            Forms in HTML
+        
+        admission form
+            personal , academic, documents
+        
+        registrations
+            personal -> mobile, email, address, password
+
+        login
+            username & password
+
+        text
+        files 
+
+
+        <form></form>
+
+        action
+            backend / url
+        method
+           get
+            - default method ( browser search bar, anchor, forms )
+            - limited
+            - cannot share files
+            - unsecured 
+            - only used to get the data from server
+           post
+            - unlimit
+            - files
+            - to send the data to the server
+
+        https
+            404 -> not found
+            200 -> ok request succes
+            405 -> method not allowed
+    
+
+
+    form controls
+
+    <button type="submit"> Login </button>
+    <input type="submit"/>
+
+    <button type="reset"> reset </button>
+    <input type="reset"/>
+
+    input fields
+
+    login -> 
+        textbox / email
+        <input type="text">
+        password
+        <input type="password">
+        Number
+        <input type="number">
+        Email 
+        <input type="email">
+        search bar
+        <input type="search">
+        urls
+        <input type="url">
+        telephone
+        <input type="tel">
+
+
+
+        <label>
+
+    
+        label -> for 
+        input -> id
+                -> to identify for the lable
+                -> to identify the field in javascript 
+            placeholder
+            name -> 
+    
+
+    required form element attributes
+            id
+            name
+            lable / placeholder
+            value
+
+    validation 2
+            required -> 
+            pattern = regular expression
+
+
+            http://127.0.0.1:5500/Day%2006/index.html? 
+            
+            http://127.0.0.1:5500/Day%2006/sdcsd?
+
+            http://127.0.0.1:5500/Day%2006/sdcsd?username=efe&password=sfsfefe
+
+
+
+    -->
+
+    <!-- creating form -->
+    <form action="sdcsd" method="get">
+      <!-- plain single word or single line -->
+      <label for="username">Enter Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="enter username"
+        required
+      /><br />
+      <!-- hidden by default  -->
+      <label for="password">Enter Password</label>
+      <input type="password" id="password" name="password" /><br />
+      <!-- number as input -->
+      <!-- <label for="number">Enter a Number</label>
+      <input type="number" id="number" /><br /> -->
+      <!-- only accept email -->
+      <!-- <label for="email">Enter email </label>
+      <input type="email" id="email" /><br /> -->
+
+      <label for="option1">
+        <input type="radio" id="option1" name="option" value="option1" /> Option
+        1
+      </label>
+      <label for="option2">
+        <input type="radio" id="option2" name="option" value="option2" /> Option
+        2
+      </label>
+      <label for="option3">
+        <input type="radio" id="option3" name="option" value="option3" /> Option
+        3
+      </label>
+      <label for="option4">
+        <input type="radio" id="option4" name="option" value="option4" /> Option
+        4
+      </label>
+      <label for="option5">
+        <input type="radio" id="option5" name="option" value="option5" /> Option
+        5
+      </label>
+      <!-- resets the form controls -->
+      <button type="reset">Reset</button>
+      <!-- submits the form to given action URL -->
+      <button type="submit">Submit</button><br />
+      <!-- <input type="submit" />
+      <input type="reset" /> -->
+    </form>
+
+    <button>Reset</button>
+
+    <!-- 
+    
+
+        Task
+            - Create login form
+            - online examination ( MCQ based )
+
+    -->
+  </body>
+</html>

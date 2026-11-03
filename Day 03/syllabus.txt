@@ -1,0 +1,74 @@
+
+
+Web introduction
+    web, internet, server, ISP, client, 
+
+HTML introduction
+    html, structure
+
+    <html>
+        <head>
+            favicon
+            css file
+            javascript
+        </head>
+        <body>
+
+        </body>
+    </html>
+
+types of tags
+    1. block
+        <p> this is paragraph</p>
+    2. inline
+        <span> </span>
+
+presentational & formatting
+
+headings -> h1 -> h6
+p 
+span -> inline text formatting
+pre  
+q  ->   ""
+blockquote -> 
+sup
+sub
+code 
+
+formatting
+b
+i
+u
+mark
+strong
+
+
+
+
+web introduction
+HTML introduction & structure
+Presentational & formatting tags
+links & images 
+list & containers
+attributes
+tables
+iframe
+form
+semantic tags
+multimedia tags
+
+
+CSS introduction and structure
+colors, border and backgrounds
+Box Modal properties
+position properties
+flex Box
+grid
+media queries
+transition & animations
+utility classes
+
+
+
+
+

@@ -1,0 +1,15 @@
+p {
+  position: absolute;
+  top: 200px;
+}
+
+/* button {
+  position: sticky;
+  top: 50%;
+} */
+
+span {
+  background-color: red;
+  position: fixed;
+  top: 10px;
+}

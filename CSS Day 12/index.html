@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- 
+            Responsive Web design using CSS media queries
+
+            mobile
+                    300px * 820px
+
+                    200px -> width
+            laptop
+                    1080px * 720px
+
+            media queries are used to target the specific screen size to style
+
+            Utility classes & transition transform
+
+            modules & animation
+
+
+    
+    
+
+    -->
+    <div class="top-bar">
+      <div class="left">
+        <span>&starf;</span>
+        <span>Get 5% off on your first order,</span>
+        <span>Promo:ORDER5</span>
+      </div>
+      <div class="right">
+        <span>📍</span>
+        <span>Banjara Hills, <b>Road No. 12</b>, Hyderabad</span>
+        <span>Change Location</span>
+      </div>
+    </div>
+    <header>
+      <div class="first">
+        <span>Order</span>
+        <span>.in</span>
+      </div>
+      <nav class="nav_1">
+        <a href="">Home</a>
+        <a href="">browse Menu</a>
+        <a href="">Speacial offers</a>
+        <a href="">Restaurants</a>
+        <a href="">Track Order</a>
+      </nav>
+      <div class="button">
+        <button><span>icon</span> <span>&#8377; 1,249</span></button>
+        <button><span>icon</span> <span>Login/Signup</span></button>
+      </div>
+      <div class="menu" id="menu">
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+
+      <div class="mobile-navigation" id="mobile-menu">
+        <nav class="nav_2">
+          <a href="">Home</a>
+          <a href="">browse Menu</a>
+          <a href="">Speacial offers</a>
+          <a href="">Restaurants</a>
+          <a href="">Track Order</a>
+        </nav>
+        <div class="button_2">
+          <button><span>icon</span> <span>&#8377; 1,249</span></button>
+          <button><span>icon</span> <span>Login/Signup</span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="cards">1</div>
+      <div class="cards">2</div>
+      <div class="cards">3</div>
+      <div class="cards">4</div>
+      <div class="cards">5</div>
+      <div class="cards">6</div>
+    </div>
+
+    <script>
+      const menu = document.getElementById("menu");
+      const menuContainer = document.getElementById("mobile-menu");
+      menu.addEventListener("click", (e) => {
+        menuContainer.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

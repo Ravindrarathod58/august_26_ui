@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        forms
+            textfield
+                text
+                password
+                number
+                email
+
+            submit
+            reset
+            label
+            radio
+
+        forms grouping
+            fieldset
+                    legend
+
+        MCQs form
+    
+    -->
+
+    <div>
+      <!-- 
+            textbox
+            4 options -> radio
+        
+        -->
+
+      <h2>Online MCQ exam on HTML</h2>
+      <form action="">
+        <div>
+          <p>Q1. Full form of HTML</p>
+          <label for="Q1_option1">
+            <input
+              type="radio"
+              name="question1"
+              id="Q1_option1"
+              value="HyperText Markup Language"
+            />
+            HyperText Markup Language
+          </label>
+          <br />
+          <label for="Q1_option2">
+            <input
+              type="radio"
+              name="question1"
+              id="Q1_option2"
+              value=" HyperText Mardown language"
+            />
+            HyperText Mardown language
+          </label>
+          <br />
+          <label for="Q1_option3">
+            <input
+              type="radio"
+              name="question1"
+              id="Q1_option3"
+              value=" Hyper Markup Language"
+            />
+            Hyper Markup Language
+          </label>
+          <br />
+          <label for="Q1_option4">
+            <input
+              type="radio"
+              name="question1"
+              id="Q1_option4"
+              value="  HyperText Markup"
+            />
+            HyperText Markup
+          </label>
+          <br />
+        </div>
+
+        <hr />
+        <div>
+          <p>Q2 correct syntax for paragraph tag</p>
+          <label for="">
+            <input
+              type="radio"
+              name="question2"
+              id="Q2_option1"
+              value="<p></p>"
+            />
+            <code> &lt; p &gt; &lt;/p &gt; </code>
+          </label>
+          <br />
+          <label for="Q2_option2">
+            <input type="radio" name="question2" id="Q2_option2" value="<p>" />
+            <code> &lt; p &gt; </code>
+          </label>
+          <br />
+          <label for="Q2_option3">
+            <input
+              type="radio"
+              name="question2"
+              id="Q2_option3"
+              value="<paragraph></paragraph>"
+            />
+            <code> &lt; paragraph &gt; &lt;/paragraph &gt; </code>
+          </label>
+          <br />
+          <label for="Q2_option4">
+            <input type="radio" name="question2" id="Q2_option4" value="</p>" />
+            <code> &lt;/p &gt; </code>
+          </label>
+          <br />
+        </div>
+      </form>
+
+      <form action="">
+        <fieldset>
+          <!-- adds the border to entire form -->
+          <legend>Login form</legend>
+          <h2>Login Form</h2>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <br />
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div>
+            <button type="submit">Login</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

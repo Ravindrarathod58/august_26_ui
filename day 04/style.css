@@ -1,0 +1,13 @@
+#img2 {
+  border: 2px solid red;
+}
+.border {
+  border: 2px solid blue;
+}
+
+#p1 {
+  border: 2px solid green;
+}
+.font {
+  font-size: 50px;
+}

@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        attributes
+
+        1. global
+        2. element specific
+        3. boolean attribute
+        4. event attribute
+            onclick, onload, onpress
+
+        entities
+            special character 
+            &lt; &gt; <  >
+
+            #&8377 ;  rupee
+
+
+        list & table
+        list 
+            collection of data either in ascending or descending
+        
+        table
+            collection of data structured in rows and columns
+            row -> row is collection of data , record, tuple
+
+
+    
+
+        student
+
+        column -> attribute / name given to data
+
+
+
+        roll_no name lastname address mobile age course fees
+        1       ravi    rathod  pune   1345   25   java  1234
+        2       ravi    rathod  pune   1345   25   java  1234
+    
+
+
+
+    grocery                         unordred
+    *. sugar
+    -. peanuts
+    . Oil
+    5. Soap
+    6. conditionar
+    7. washing powder
+
+    students
+    roll_no
+
+    1. ravi
+    2. rohit
+    3. shyam
+    4. shubham
+    5. omkar
+
+    content 
+    list programming languages definitions
+
+    definition list
+
+    HTML
+        HTML is language of the web it used to structure the webpages
+    
+    CSS
+        CSS is used to style the webpages
+
+    JavaScript
+        JavaScript is high level programming language which is used to add the interactivity to the webpages
+
+    Java
+        Java is high level, object oriented programming language
+
+
+
+
+
+
+    list attributes
+        type
+          to change the appearance or order of the list 
+          circle, square, bullet
+          number, alphabets, roman 
+        
+        start
+          to change the starting order of the list 
+      
+    Table attributes
+        border
+            adds the border to the table and cells 
+            0 -> no border
+            1 -> full border
+          
+        height & widht
+        cellspacing
+            adds the space between two cells
+        cellpadding
+            adds the space between cell border and content
+          
+        rowspan
+            merge two or more rows
+        colspan
+            merge two or more columns
+
+        border-collapse
+              collapse 
+              adds the single border to the table
+          
+
+
+    -->
+
+    <!-- Ordered list -->
+    <ol>
+      <!-- 
+        1
+        2 
+        <li></li>  adds the item in the list
+
+
+        alphabetical
+            1. lowercase
+            2. uppercase
+
+        type
+            Number, Alphabet, Roman
+
+
+        -->
+
+      <li>Ravi</li>
+      <li>Rohit</li>
+      <li>Shyam</li>
+      <li>Shubham</li>
+      <li>Omkar</li>
+    </ol>
+
+    <ol type="a">
+      <li>Ravi</li>
+      <li>Rohit</li>
+      <li>Shyam</li>
+      <li>Shubham</li>
+      <li>Omkar</li>
+    </ol>
+    <ol type="A">
+      <li>Ravi</li>
+      <li>Rohit</li>
+      <li>Shyam</li>
+      <li>Shubham</li>
+      <li>Omkar</li>
+    </ol>
+    <ol type="i">
+      <li>Ravi</li>
+      <li>Rohit</li>
+      <li>Shyam</li>
+      <li>Shubham</li>
+      <li>Omkar</li>
+    </ol>
+    <ol type="I">
+      <li>Ravi</li>
+      <li>Rohit</li>
+      <li>Shyam</li>
+      <li>Shubham</li>
+      <li>Omkar</li>
+    </ol>
+
+    <!-- start attribute -->
+
+    <ol start="4">
+      <li>Ravi</li>
+      <li>Rohit</li>
+      <li>Shyam</li>
+      <li>Shubham</li>
+      <li>Omkar</li>
+    </ol>
+    <ol start="4" type="A">
+      <li>Ravi</li>
+      <li>Rohit</li>
+      <li>Shyam</li>
+      <li>Shubham</li>
+      <li>Omkar</li>
+    </ol>
+
+    <!-- Unordered list -->
+    <ul>
+      <li>sugar</li>
+      <li>peanut</li>
+      <li>Oil</li>
+      <li>Soap</li>
+      <li>Washing powder</li>
+      <li>Conditionar</li>
+    </ul>
+
+    <ul type="circle">
+      <li>sugar</li>
+      <li>peanut</li>
+      <li>Oil</li>
+      <li>Soap</li>
+      <li>Washing powder</li>
+      <li>Conditionar</li>
+    </ul>
+
+    <!-- list-style-type : circle, square, bullet
+        list-style-image : url() 
+    -->
+    <ul type="square">
+      <li>sugar</li>
+      <li>peanut</li>
+      <li>Oil</li>
+      <li>Soap</li>
+      <li>Washing powder</li>
+      <li>Conditionar</li>
+    </ul>
+
+    <!-- Definition list -->
+
+    <dl>
+      <dt>HTML</dt>
+      <dd>HTML is a language of the web to structure the webpage</dd>
+      <dt>CSS</dt>
+      <dd>Css is used to style the webpages</dd>
+      <dt>JavaScript</dt>
+      <dd>Javascript is high level multi paradigm programming language</dd>
+      <dt>java</dt>
+      <dd>Java is high level object oriented programming</dd>
+    </dl>
+
+    <!-- 
+    
+        Nested list
+
+    -->
+
+    <!-- List -->
+
+    <!-- 1 grocery 2. vegitable -->
+    <ul>
+      <li>Grocery</li>
+      <ul>
+        <li>Sugar</li>
+        <li>Peanuts</li>
+        <li>Oil</li>
+        <li>Washing powder</li>
+      </ul>
+
+      <li>vegitable</li>
+      <ul>
+        <li>Potato</li>
+        <li>Sweet Potato</li>
+        <li>Lady finger</li>
+        <li>cauliflower</li>
+        <li>Tomato</li>
+        <li>Onion</li>
+      </ul>
+    </ul>
+
+    <ul>
+      <li>Grocery</li>
+      <ol>
+        <li>Sugar</li>
+        <li>Peanuts</li>
+        <li>Oil</li>
+        <li>Washing powder</li>
+      </ol>
+
+      <li>vegitable</li>
+      <ul>
+        <li>Potato</li>
+        <li>Sweet Potato</li>
+        <li>Lady finger</li>
+        <li>cauliflower</li>
+        <li>Tomato</li>
+        <li>Onion</li>
+      </ul>
+    </ul>
+
+    <!-- Nested defintion list -->
+    <!-- 
+        programming language
+            Java
+                defintion
+
+        databases
+
+        web technologies
+
+        frameworks
+    
+    -->
+
+    <!-- commment section -->
+    <!-- FAQ -->
+
+    <dl>
+      <dt>Programming Languages</dt>
+      <dd>
+        <dl>
+          <dt>Java</dt>
+          <dd>Java is a high level programming language</dd>
+          <dt>JavaScript</dt>
+          <dd>Javascript is high level multi paradigm programming language</dd>
+          <dt>Python</dt>
+          <dd>Python is a high level multi paradigm programming language</dd>
+          <dt>C</dt>
+          <dd>c is general purpose procedural programming language</dd>
+          <dt>C++</dt>
+          <dd>C++ is a general purpose object oriented programming language</dd>
+        </dl>
+      </dd>
+      <dt>Database</dt>
+      <dd>
+        <dl>
+          <dt>Oracle</dt>
+          <dd>Oracle is relational database management system</dd>
+          <dt>MySql</dt>
+          <dd>MySql is relational database management system</dd>
+          <dt>MongoDB</dt>
+          <dd>it is a non-relations database management system</dd>
+        </dl>
+      </dd>
+      <dt>Web technologies</dt>
+      <dd>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HTML is a language of the web to structure the webpage</dd>
+          <dt>CSS</dt>
+          <dd>Css is used to style the webpages</dd>
+          <dt>JavaScript</dt>
+          <dd>Javascript is high level multi paradigm programming language</dd>
+        </dl>
+      </dd>
+      <dt>Frameworks</dt>
+      <dd>
+        <dl>
+          <dt>React</dt>
+          <dd>React is a Javascript library to build the dynamic UI</dd>
+          <dt>Spring Boot</dt>
+          <dd>
+            Spring boot is java framework to build high performance and scalable
+            web applications
+          </dd>
+
+          <dt>Angular</dt>
+          <dd>
+            Angular is javascript framework used for building high performance
+            web application
+          </dd>
+        </dl>
+      </dd>
+    </dl>
+
+    <!-- Tables -->
+    <!-- 
+    <table>
+
+
+        head
+            columns 
+        body
+            rows
+    
+    
+     -->
+
+    <!-- Student -->
+    <!-- 
+        border
+            this attribute adds the borders for the cell
+
+            cell
+                intersection of the row and column
+    
+     -->
+    <table border="1">
+      <thead>
+        <!-- headings are visible in bold text -->
+        <th>roll_no</th>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>address</th>
+        <th>Mobile</th>
+        <th>age</th>
+        <th>Course</th>
+        <th>Fees</th>
+      </thead>
+
+      <tbody>
+        <!-- tr tag created the new row in a table -->
+        <tr>
+          <!-- td tag used to add the data in a row -->
+          <td>1</td>
+          <td>Ravi</td>
+          <td>Lastname</td>
+          <td>Pune</td>
+          <td>123456789</td>
+          <td>25</td>
+          <td>Java Fullstack</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Shyam</td>
+          <td>Kulte</td>
+          <td>Pune</td>
+          <td>2345676543</td>
+          <td>19</td>
+          <td>Java Fullstack</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Shivam</td>
+          <td>Shinde</td>
+          <td>Pune</td>
+          <td>1234321</td>
+          <td>21</td>
+          <td>Python Fullstack</td>
+          <td>4000</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <!-- Using height and width attribute -->
+    <table border="1" width="100%" height="500px" style="text-align: center">
+      <thead>
+        <!-- headings are visible in bold text -->
+        <th>roll_no</th>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>address</th>
+        <th>Mobile</th>
+        <th>age</th>
+        <th>Course</th>
+        <th>Fees</th>
+      </thead>
+
+      <tbody>
+        <!-- tr tag created the new row in a table -->
+        <tr>
+          <!-- td tag used to add the data in a row -->
+          <td>1</td>
+          <td>Ravi</td>
+          <td>Lastname</td>
+          <td>Pune</td>
+          <td>123456789</td>
+          <td>25</td>
+          <td>Java Fullstack</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Shyam</td>
+          <td>Kulte</td>
+          <td>Pune</td>
+          <td>2345676543</td>
+          <td>19</td>
+          <td>Java Fullstack</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Shivam</td>
+          <td>Shinde</td>
+          <td>Pune</td>
+          <td>1234321</td>
+          <td>21</td>
+          <td>Python Fullstack</td>
+          <td>4000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+
+    <!-- Using cellspacing and cellpadding  -->
+    <table
+      border="1"
+      width="100%"
+      height="500px"
+      style="text-align: center; border-collapse: collapse"
+    >
+      <thead>
+        <!-- headings are visible in bold text -->
+        <th>roll_no</th>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>address</th>
+        <th>Mobile</th>
+        <th>age</th>
+        <th>Course</th>
+        <th>Fees</th>
+      </thead>
+
+      <tbody>
+        <!-- tr tag created the new row in a table -->
+        <tr>
+          <!-- td tag used to add the data in a row -->
+          <td>1</td>
+          <td>Ravi</td>
+          <td>Lastname</td>
+          <td>Pune</td>
+          <td>123456789</td>
+          <td>25</td>
+          <td>Java Fullstack</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Shyam</td>
+          <td>Kulte</td>
+          <td>Pune</td>
+          <td>2345676543</td>
+          <td>19</td>
+          <td>Java Fullstack</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Shivam</td>
+          <td>Shinde</td>
+          <td>Pune</td>
+          <td>1234321</td>
+          <td>21</td>
+          <td>Python Fullstack</td>
+          <td>4000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+
+    <!-- Using colspan and rowspan  -->
+    <table
+      border="1"
+      width="100%"
+      height="500px"
+      style="text-align: center; border-collapse: collapse"
+    >
+      <thead>
+        <!-- headings are visible in bold text -->
+        <th>roll_no</th>
+        <th colspan="2">Full Name</th>
+        <!-- <th>Last Name</th> -->
+        <th>address</th>
+        <th>Mobile</th>
+        <th>age</th>
+        <th>Course</th>
+        <th>Fees</th>
+      </thead>
+
+      <tbody>
+        <!-- tr tag created the new row in a table -->
+        <tr>
+          <!-- td tag used to add the data in a row -->
+          <td>1</td>
+          <td>Ravi</td>
+          <td>Rathod</td>
+          <td rowspan="3">Pune</td>
+          <td>123456789</td>
+          <td>25</td>
+          <td rowspan="2">Java Fullstack</td>
+          <td rowspan="2">2000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Shyam</td>
+          <td>Kulte</td>
+          <!-- <td>Pune</td> -->
+          <td>2345676543</td>
+          <td>19</td>
+          <!-- <td>Java Fullstack</td> -->
+          <!-- <td>2000</td> -->
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Shivam</td>
+          <td>Shinde</td>
+          <!-- <td>Pune</td> -->
+          <td>1234321</td>
+          <td>21</td>
+          <td>Python Fullstack</td>
+          <td>4000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 
+        
+    Task 
+      create a webpage layout using table 
+
+      header -> 1. branding logo 2. branding text
+                  flipkart logo     flipakart
+      sidebar -> navigation bar using links / anchor tag
+      main - content area
+              list -> ol, ul, definition , 10 items
+              table -> employee records
+              table -> student records
+              table -> product details 
+              
+    
+    -->
+  </body>
+</html>
